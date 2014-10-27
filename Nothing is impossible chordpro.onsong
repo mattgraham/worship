@@ -1,18 +1,18 @@
-{title: Nothing is Impossible}
-{artist: Planetshakers}
-{Key: [C]}
-{Original Key: [C]}
-{CANT Key:}
-{Book: Beta Book}
-{time: 4/4}
-{tempo: 142}
+title: Nothing is Impossible
+artist: Planetshakers
+Key: [C]
+Original Key: [C]
+CANT Key:
+Book: Beta Book
+time: 4/4
+tempo: 142
 
-{start_of_chorus}
+Chorus:
 [C]Through You I can do anything, [G]I can do all things [Am]
 Cause its you who gives me str[F]ength, nothing is impossible
 [C]Through you blind eyes are op[G]en, Strongholds are broken[Am]
 I am living by fa[F]ith, nothing is impossible
-{end_of_chorus}
+end_of_chorus
 
 Interlude:
 [F] [C] [Dm] [F]
@@ -28,4 +28,4 @@ Bridge:
 [F]I believe, I [C]believe,
 [Dm]I believe, [F]I believe in You x2
 
-(End on [F])
+(End on F)
