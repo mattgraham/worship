@@ -2,5 +2,5 @@
 
 - Retreat 2014
 - Hymns
-- Beta Book
+- Beta
 - MG
