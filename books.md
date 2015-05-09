@@ -1,6 +1,8 @@
 ## Markdown List of books we're currently using
 
+- Retreat 2015
 - Retreat 2014
 - Hymns
 - Beta
-- MG
+- Core
+- MG (Matt Graham)
