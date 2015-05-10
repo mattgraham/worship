@@ -7,7 +7,7 @@ The ChordPro file format is common format used in other software applications. T
 - **album** or **a** is the name of the album where the song is located
 - **artist**: The artist name or any other byline information
 - **key**: The key of the song -- alphabetic, major or minor
-- **cap**: The capo to set as number of frets -- numeric
+- **capo**: The capo to set as number of frets -- numeric
 - **tempo**: The beats per minute (BPM) -- numeric
 - **time**: The time signature -- numeric beat over bar -- 3/4
 - **duration**: The song length for autoscroll -- seconds or mm:ss
