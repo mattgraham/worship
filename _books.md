@@ -2,7 +2,8 @@
 
 - Retreat 2015
 - Retreat 2014
+- Easter
 - Hymns
 - Beta
 - Core
-- MG (Matt Graham)
+- MG
