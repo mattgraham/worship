@@ -1,3 +1,0 @@
-- [ ] The Stand - Hillsong live (start slow and build) Key of A (G Capo 2)
-- [ ] Everlasting God - 110 BPM, With Guitar Lead (that needs to be learned)
-- [ ] Covered - Planetshakers 
