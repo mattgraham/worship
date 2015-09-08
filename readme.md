@@ -1,5 +1,7 @@
 ## Worship Collection in ChordPro Format
 
+Please remember to pay your CCLI license if you are playing these for your church or out in the public. These are resources available but not meant to cheat the artist out of their rewards for their hard work. 
+
 The ChordPro file format is common format used in other software applications. The ChordPro format allows for song information to be expressed in tags with curly braces. The following are metatags supported by OnSong's implementation of the format:
 
 - **title** or **t** is the title of the song
