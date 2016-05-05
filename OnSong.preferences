@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AddingEmojiKeybordHandled</key>
+	<true/>
 	<key>AllSongsOrderMethod</key>
 	<string>title</string>
+	<key>AppleICUForce24HourTime</key>
+	<false/>
 	<key>AppleITunesStoreItemKinds</key>
 	<array>
 		<string>wemix</string>
@@ -28,115 +32,64 @@
 		<string>music-video</string>
 		<string>eBook</string>
 	</array>
+	<key>AppleKeyboards</key>
+	<array>
+		<string>en_US</string>
+		<string>emoji@sw=Emoji</string>
+	</array>
 	<key>AppleLanguages</key>
 	<array>
 		<string>en</string>
-		<string>fr</string>
-		<string>de</string>
-		<string>zh-Hans</string>
-		<string>zh-Hant</string>
-		<string>ja</string>
-		<string>nl</string>
-		<string>it</string>
-		<string>es</string>
-		<string>es-MX</string>
-		<string>ko</string>
-		<string>pt</string>
-		<string>pt-PT</string>
-		<string>da</string>
-		<string>fi</string>
-		<string>nb</string>
-		<string>sv</string>
-		<string>ru</string>
-		<string>pl</string>
-		<string>tr</string>
-		<string>uk</string>
-		<string>ar</string>
-		<string>hr</string>
-		<string>cs</string>
-		<string>el</string>
-		<string>he</string>
-		<string>ro</string>
-		<string>sk</string>
-		<string>th</string>
-		<string>id</string>
-		<string>ms</string>
-		<string>en-GB</string>
-		<string>en-AU</string>
-		<string>ca</string>
-		<string>hu</string>
-		<string>vi</string>
 	</array>
+	<key>AppleLanguagesDidMigrate</key>
+	<string>8.1</string>
 	<key>AppleLocale</key>
 	<string>en_US</string>
+	<key>INNextHearbeatDate</key>
+	<real>448527220.48787302</real>
+	<key>MSVLoggingMasterSwitchEnabledKey</key>
+	<false/>
 	<key>NSInterfaceStyle</key>
 	<string>macintosh</string>
 	<key>NSLanguages</key>
 	<array>
 		<string>en</string>
-		<string>fr</string>
-		<string>de</string>
-		<string>zh-Hans</string>
-		<string>zh-Hant</string>
-		<string>ja</string>
-		<string>nl</string>
-		<string>it</string>
-		<string>es</string>
-		<string>es-MX</string>
-		<string>ko</string>
-		<string>pt</string>
-		<string>pt-PT</string>
-		<string>da</string>
-		<string>fi</string>
-		<string>nb</string>
-		<string>sv</string>
-		<string>ru</string>
-		<string>pl</string>
-		<string>tr</string>
-		<string>uk</string>
-		<string>ar</string>
-		<string>hr</string>
-		<string>cs</string>
-		<string>el</string>
-		<string>he</string>
-		<string>ro</string>
-		<string>sk</string>
-		<string>th</string>
-		<string>id</string>
-		<string>ms</string>
-		<string>en-GB</string>
-		<string>en-AU</string>
-		<string>ca</string>
-		<string>hu</string>
-		<string>vi</string>
 	</array>
 	<key>OSBookOrderMethod</key>
 	<string>name</string>
 	<key>OSShareManagerDisplayName</key>
-	<string>Worship iPad #1</string>
+	<string>Matthew Graham’s iPad</string>
 	<key>OSShareManagerPeerID</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUIGRpUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLR
-	BgdUcm9vdIABpAkKERJVJG51bGzTCwwNDg8QUmlkVG5hbWVWJGNsYXNzE9hb/716/FkH
-	gAKAA18QD1dvcnNoaXAgaVBhZCAjMdITFBUYWCRjbGFzc2VzWiRjbGFzc25hbWWiFhdY
-	TUNQZWVySURYTlNPYmplY3RYTUNQZWVySUQSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcggR
-	Fh8oMjU6PEFHTlFWXWZoanyBipWYoaqzuAAAAAAAAAEBAAAAAAAAABsAAAAAAAAAAAAA
-	AAAAAADK
+	BgdUcm9vdIABpAkKERJVJG51bGzTCwwNDg8QUmlkVG5hbWVWJGNsYXNzE5M23DsePy9R
+	gAKAA28QFQBNAGEAdAB0AGgAZQB3ACAARwByAGEAaABhAG0gGQBzACAAaQBQAGEAZNIT
+	FBUYWCRjbGFzc2VzWiRjbGFzc25hbWWiFhdYTUNQZWVySURYTlNPYmplY3RYTUNQZWVy
+	SUQSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcggRFh8oMjU6PEFHTlFWXWZoapecpbCzvMXO
+	0wAAAAAAAAEBAAAAAAAAABsAAAAAAAAAAAAAAAAAAADl
 	</data>
 	<key>OnSong.CurrentLibrary</key>
 	<string>Default</string>
+	<key>RWTC.expirationDate</key>
+	<date>2016-03-27T05:06:34Z</date>
+	<key>RWTC.firstName</key>
+	<string>Christians for a New</string>
+	<key>RWTC.nextBillingDate</key>
+	<date>2016-03-20T05:06:34Z</date>
+	<key>RWTC.subscriptionLength</key>
+	<integer>1</integer>
+	<key>RWTC.token</key>
+	<string>BusvtaEOYDzL+BCRtz8NzOI71L4PS3ZE3M7BnlIDuMk=</string>
+	<key>RWTC.tokenValidUntilDate</key>
+	<date>2016-03-28T11:51:31Z</date>
+	<key>RWTC.username</key>
+	<string>cantministries</string>
 	<key>SongAllViewSourceIndex</key>
 	<integer>0</integer>
 	<key>SongArtistsOrderMethod</key>
 	<string>title</string>
-	<key>SongBookOrderMethod</key>
-	<string>name</string>
-	<key>SongDrawingManagerBrushHighlighterColor</key>
-	<string>FFFF007F</string>
-	<key>SongDrawingManagerBrushHighlighterSize</key>
-	<real>9.3901872634887695</real>
 	<key>SongDrawingManagerBrushPenColor</key>
-	<string>7F007F</string>
+	<string>000000</string>
 	<key>SongDrawingManagerBrushType</key>
 	<integer>1</integer>
 	<key>SongKeysOrderMethod</key>
@@ -145,41 +98,28 @@
 	<true/>
 	<key>SongProvider.LTC</key>
 	<string>LTCProvider</string>
+	<key>SongProvider.RWTC</key>
+	<string>RWTCProvider</string>
 	<key>SongProvider.WorshipReady</key>
 	<string>WRProvider</string>
 	<key>SongSetAutoArchiveDays</key>
-	<integer>0</integer>
+	<integer>31</integer>
 	<key>SongSetFolderOrderMethod</key>
 	<string>title</string>
 	<key>SongSetListSourceIndex</key>
 	<integer>0</integer>
 	<key>SongSetOrderMethod</key>
 	<string>title</string>
-	<key>SongShareConnectSelectedIndex</key>
-	<integer>0</integer>
 	<key>SongTopicsOrderMethod</key>
 	<string>title</string>
 	<key>SongTrackingDate</key>
-	<date>2015-03-22T21:04:54Z</date>
-	<key>SongWebService.whitelist</key>
-	<dict>
-		<key>3A912CC4-7123-4680-AA6D-B3E1FD8D4C10</key>
-		<string>Worship iPad #2</string>
-		<key>5CAF62E4-8566-47A2-B455-2B7CEB0833AA</key>
-		<string>Matthew Graham’s iPad</string>
-		<key>BD67CDA0-A713-4C5D-8227-87E100E4761B</key>
-		<string>Worship iPad #3</string>
-		<key>D7709B5B-4F59-43A5-AE1A-327B05CAD09F</key>
-		<string>Worship iPad #4</string>
-	</dict>
-	<key>UIDisableLegacyTextView</key>
-	<true/>
+	<date>2015-03-22T19:29:09Z</date>
 	<key>WebDatabaseDirectory</key>
-	<string>/var/mobile/Applications/AA189E40-E53E-43C7-BE5F-C540742CB95B/Library/Caches</string>
+	<string>/var/mobile/Containers/Data/Application/711A6279-8082-4B39-BF15-9DAB409AD95A/Library/Caches</string>
 	<key>WebKitDiskImageCacheSavedCacheDirectory</key>
-	<string>/var/mobile/Applications/AA189E40-E53E-43C7-BE5F-C540742CB95B/tmp/DiskImageCache-MW931iRO</string>
+	<string>/var/mobile/Containers/Data/Application/711A6279-8082-4B39-BF15-9DAB409AD95A/tmp/DiskImageCache-t6RSHuaU</string>
 	<key>WebKitLocalStorageDatabasePathPreferenceKey</key>
-	<string>/var/mobile/Applications/AA189E40-E53E-43C7-BE5F-C540742CB95B/Library/Caches</string>
+	<string>/var/mobile/Containers/Data/Application/711A6279-8082-4B39-BF15-9DAB409AD95A/Library/Caches</string>
 	<key>WebKitOfflineWebApplicationCacheEnabled</key>
 	<true/>
 	<key>WebKitShrinksStandaloneImagesToFit</key>
@@ -198,25 +138,27 @@
 	<string></string>
 	<key>chordSymbolAction</key>
 	<integer>1</integer>
+	<key>com.apple.content-rating.AppRating</key>
+	<integer>1000</integer>
+	<key>com.apple.content-rating.ExplicitBooksAllowed</key>
+	<true/>
+	<key>com.apple.content-rating.ExplicitMusicPodcastsAllowed</key>
+	<true/>
+	<key>com.apple.content-rating.MovieRating</key>
+	<integer>1000</integer>
+	<key>com.apple.content-rating.TVShowRating</key>
+	<integer>1000</integer>
 	<key>com.facebook.sdk:lastAttributionPing1412562358978728</key>
-	<date>2014-08-17T19:39:28Z</date>
+	<date>2015-04-05T18:59:39Z</date>
 	<key>com.facebook.sdk:lastInstallResponse1412562358978728</key>
 	<dict>
 		<key>FACEBOOK_NON_JSON_RESULT</key>
 		<string>true</string>
 	</dict>
-	<key>connectServerEnabled</key>
-	<true/>
 	<key>debugEnabled</key>
 	<false/>
 	<key>explainHideMenubar</key>
 	<true/>
-	<key>exportFormat</key>
-	<array/>
-	<key>exportSource</key>
-	<string>Dropbox</string>
-	<key>externalScreenRotation</key>
-	<integer>-1</integer>
 	<key>fontName</key>
 	<string>Helvetica</string>
 	<key>fontSize</key>
@@ -224,15 +166,15 @@
 	<key>footPedalMode</key>
 	<integer>2</integer>
 	<key>footPedalScreen</key>
-	<string>GuidePedalAirTurnTwoViewController</string>
+	<string>GuidePedalAirTurnPEDTwoViewController</string>
 	<key>globalVelocity</key>
 	<real>0.5039370059967041</real>
 	<key>highlightColor</key>
 	<string>FFFFFF</string>
 	<key>lastSettingsSectionIndex</key>
-	<integer>2</integer>
+	<integer>4</integer>
 	<key>lastSong</key>
-	<string>welcome_to_onsong</string>
+	<string>3F183ADF-90B9-48C7-81F3-1360F757EE9A</string>
 	<key>menuCurrentHUD</key>
 	<string>SongHUDSongTitleView</string>
 	<key>midiEnabled</key>
@@ -241,8 +183,6 @@
 	<string>f5f5a0</string>
 	<key>noteOpacity</key>
 	<real>1</real>
-	<key>openFormat</key>
-	<array/>
 	<key>pageMarginBottom</key>
 	<real>54</real>
 	<key>pageMarginLeft</key>
@@ -255,27 +195,13 @@
 	<string>portrait</string>
 	<key>paperSize</key>
 	<string>us_letter</string>
+	<key>printScale</key>
+	<real>0.94937503337860107</real>
 	<key>printSelectedBook</key>
 	<false/>
 	<key>printSelectedSongOnly</key>
 	<false/>
-	<key>projectorAnimationSpeed</key>
-	<real>1.09375</real>
-	<key>projectorBackgroundColor</key>
-	<string>007FFF</string>
-	<key>projectorBackgroundMedia</key>
-	<string>5FB26DDA-3686-422A-AD3A-4EDD37FE2B0C</string>
-	<key>projectorFontName</key>
-	<string>Verdana-Bold</string>
-	<key>projectorFontSize</key>
-	<real>84</real>
-	<key>projectorShadowColor</key>
-	<string>00000039</string>
-	<key>projectorShowBackground</key>
-	<true/>
 	<key>projectorShowBackgroundMedia</key>
-	<false/>
-	<key>projectorShowLyrics</key>
 	<false/>
 	<key>shareVersion</key>
 	<integer>1</integer>
@@ -296,11 +222,63 @@
 	<key>syncContentAsFiles</key>
 	<true/>
 	<key>syncFolder</key>
-	<string>/Worship Team/OnSong</string>
+	<string>Worship Team/OnSong</string>
 	<key>tableCellDefaultTextLabelFontName</key>
 	<string>Helvetica-Bold</string>
 	<key>tableCellSubtitleTextLabelFontName</key>
 	<string>Helvetica-Bold</string>
+	<key>tmp_(null)</key>
+	<string>Great Are You Lord
+All Sons &amp; Daughters
+Key: A
+CCLI: 6460220
+
+Intro:
+D - F#m - Esus   (2x)
+
+Verse:
+         D             F#m
+You give life, You are love
+          Esus
+You bring light to the darkness
+         D           F#m
+You give hope, You restore
+       Esus
+Every heart that is broken
+D F#m            Esus
+  Great are You, Lord
+
+Chorus:
+          D              F#m
+It's Your breath in our lungs
+      Esus
+So we pour out our praise, we pour out our praise
+          D              F#m
+It's Your breath in our lungs
+      Esus
+So we pour out our praise to You only
+
+Instrumental:
+A - Asus - D2 - A
+
+Bridge:
+A
+All the earth will shout Your praise
+Asus
+Our hearts will cry, these bones will sing
+D2             A
+Great are You, Lord
+
+Bridge (The Third Time):
+A
+All the earth will shout Your praise
+Asus/F#
+Our hearts will cry, these bones will sing
+D2             A
+Great are You, Lord
+
+Ending:
+D - F#m - Esus   (2x)</string>
 	<key>tockEnabled</key>
 	<true/>
 </dict>
