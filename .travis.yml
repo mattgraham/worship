@@ -1,0 +1,11 @@
+language:
+script: zip worshipsongs.zip *.onsong
+deploy:
+  provider: releases
+  api_key:
+    secure: VvmmhA95ky4/pzpjt3nWXWvXM/Myr0PChus/Z58Po78OF9MQnscfsbgjsWeheYeV4KYkxb1wuMNlmy9FdkZrYZhNPgtpL49qWsp7KhcQgHhjSUVEMmfuuhrzjL6A2Qxoqkd1ugYpYbQxo17EEybwpycxHEeznHfHFROY3qLFtQ3FEzfjDNQrP/mfHnnUXPtkslV6AJjJ/J3kIm0veUUS9ijm54RnQp28by+obogB0bn+i4RnfqQ+BFyjzFwc7ES1fTW2zhxbt7iqrkeBdfHM3DNhsccpzjnrpiTnuPNwBFvdnsroETV3q5G4QsYYNYYdg71yF/aT4fjCcwBhPB5TesiV/AInb4jsZ97sh5nwGxPdyzO02UPoZ9F/6yVvMWYSrfJBStx5YL76q95/xkLuQO9UlstU9YHUuJyJeeUG7DH2KaixMh94ZKJ+dfAXM8qFLu0FxPX3vbeZlC71+wDWoLzHohgwUtc87yzHOKhtnlOIekcX8pawUW/jmghqMtvYaZhftfNOVFhMhZdIcsQkseq3RKCV8hDqg8ficnV/6YO9OBRieliVZTS19toHW/jC6s8H+NxTL5uWd17mM7GekfN5OMbAHSyL2vnEjWvWVsVqATOYjnznMgme/fEJTPmUznLNwgoEhw6BQDPhqV7q0MPzLJ5AaiFoMlxkH1HuszE=
+  file: worshipsongs.zip
+  on:
+    repo: jswetzen/worship
+    branch: master
+  skip_cleanup: true
