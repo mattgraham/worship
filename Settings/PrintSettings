@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<print_settings>
+  <title font="Arial" size="20" bold="true" italic="false" underline="false" color="#000000" border="false" border_color="#000000" shadow="false" shadow_color="#000000" fill="false" fill_color="#000000"/>
+  <author font="Times New Roman" size="12" bold="false" italic="true" underline="false" color="#000000" border="false" border_color="#000000" shadow="false" shadow_color="#000000" fill="false" fill_color="#000000"/>
+  <heading font="Arial" size="10" bold="true" italic="false" underline="false" color="#800000" border="false" border_color="#000000" shadow="false" shadow_color="#000000" fill="false" fill_color="#000000"/>
+  <chords font="Times New Roman" size="11" bold="true" italic="false" underline="false" color="#000080" border="false" border_color="#000000" shadow="false" shadow_color="#000000" fill="false" fill_color="#000000"/>
+  <capo_chords font="Times New Roman" size="10" bold="false" italic="true" underline="false" color="#008000" border="false" border_color="#000000" shadow="false" shadow_color="#000000" fill="false" fill_color="#000000"/>
+  <lyrics font="Arial Narrow" size="12" bold="false" italic="false" underline="false" color="#000000" border="false" border_color="#000000" shadow="false" shadow_color="#000000" fill="false" fill_color="#000000"/>
+  <copyright font="Courier New" size="9" bold="false" italic="true" underline="false" color="#000000" border="false" border_color="#000000" shadow="false" shadow_color="#000000" fill="false" fill_color="#000000"/>
+  <style caps_title="true" border_thickness="2" caps_song_title="true" highlight_chorus="true"/>
+  <page width="612" height="792" left="72" top="72" right="72" bottom="72" points="true" inches="true"/>
+</print_settings>

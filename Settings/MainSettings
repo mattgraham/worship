@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main_settings>
+  <ccli id="" password="" number=""/>
+  <version songs="0.98" sets="0.96" check="false"/>
+  <geometry y="155" x="753" width="1787" height="1158"/>
+  <last_scripture verse_per_slide="2" version="KJV"/>
+  <proxy port="0" host=""/>
+  <fonts>
+  <headings font="Arial" size="11" bold="false" italic="false" underline="false" color="#00000000" border="false" border_color="#00000000" shadow="false" shadow_color="#00000000" fill="false" fill_color="#00000000"/>
+  <labels font="Arial" size="10" bold="false" italic="false" underline="false" color="#00000000" border="false" border_color="#00000000" shadow="false" shadow_color="#00000000" fill="false" fill_color="#00000000"/>
+  <text_fields font="Arial" size="10" bold="false" italic="false" underline="false" color="#00000000" border="false" border_color="#00000000" shadow="false" shadow_color="#00000000" fill="false" fill_color="#00000000"/>
+  <fixed_width font="Courier New" size="11" bold="false" italic="false" underline="false" color="#00000000" border="false" border_color="#00000000" shadow="false" shadow_color="#00000000" fill="false" fill_color="#00000000"/>
+  <large_headings font="Arial Black" size="24" bold="false" italic="false" underline="false" color="#00000000" border="false" border_color="#00000000" shadow="false" shadow_color="#00000000" fill="false" fill_color="#00000000"/>
+  <buttons font="Arial Narrow" size="11" bold="true" italic="false" underline="false" color="#00000000" border="false" border_color="#00000000" shadow="false" shadow_color="#00000000" fill="false" fill_color="#00000000"/>
+</fonts>
+  <user_defined user1="User Defined 1" user2="User Defined 2" user3="User Defined 3"/>
+  <paint new="false"/>
+  <songfolder>( All )</songfolder>
+  <startmode sets="0"/>
+  <slide_style_color enabled="true">
+  <verse color="#D5D5FF00"/>
+  <bridge color="#8A8AFF00"/>
+  <pre-chorus color="#7171FF00"/>
+  <chorus color="#BCBCFF00"/>
+  <tag color="#A3A3FF00"/>
+  <scripture color="#FFB4B400"/>
+  <custom color="#FFE3D500"/>
+  <style color="#EAEAFF00"/>
+  <image color="#FFFFB400"/>
+  <external color="#D5FFD500"/>
+  <blank color="#FFFFFF00"/>
+</slide_style_color>
+  <linked_songs prompt="false"/>
+  <rcserver enable="false" port="8082">
+  <key></key></rcserver>
+  <extrender enable="false" port="8083" timeout="3000">
+  <server>localhost</server></extrender>
+  <image_quality fit_to_screen="true" fit_to_body="false" keepaspect="false" exclude_backgrounds="false" background_as_text="false" compression="3"/>
+</main_settings>
