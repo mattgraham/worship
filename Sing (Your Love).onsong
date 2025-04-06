@@ -1,28 +1,32 @@
-Title: Sing (Your Love)
-Artist: Hillsong United
-Key: [A]
-Original Key: A
-Book: Camp 2022, Trinity, Ministering, Slow
+{title: Sing (Your Love)}
+{artist: Hillsong United}
+{key: A}
+{original_key: A}
+{book: Camp 2022, Trinity, Ministering, Slow}
 
-Verse 1:
+{start_of_verse: Verse 1}
 [A]It used to be da[E]rkness
 [Bm7]Without you  [D]
 [A]I lived my life in [E]blindness
 [Bm7]But now I am foun[D]d
+{end_of_verse}
 
-Chorus:
+{start_of_chorus}
 And I'll [A]sing, [E]sing
 [Bm7]I love you so  [D]
 And I'll [A]sing, [E]because 
 the [Bm7]world can't take away [D]Your love
+{end_of_chorus}
 
-Verse 2:
+{start_of_verse: Verse 2}
 [A]Found me in [E]weakness, 
 [Bm7]Broken[D]
 [A]You came to me in [E]kindness
 [Bm7]and now I l[D]ive
+{end_of_verse}
 
-Bridge:
+{start_of_bridge}
 [A]I'll give my [E]life 
 for [Bm7]You Lord
 [D]For all you've done
+{end_of_bridge}

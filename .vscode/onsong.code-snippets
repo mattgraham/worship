@@ -1,0 +1,12 @@
+{
+    "ChordPro Template": {
+        "prefix": "chordpro",
+        "body": [
+            "Title: ${1:Title}",
+            "Artist: ${2:Artist}",
+            "Key: ${3:Key}",
+            "Tempo: ${4:60}"
+        ],
+        "description": "Template for ChordPro format with proper section markers and chord notation"
+    }
+} 
