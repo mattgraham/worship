@@ -4,7 +4,7 @@
         "body": [
             "Title: ${1:}",
             "Artist: ${2:}",
-            "Key: [${3:D}]",
+            "Key: [${3:G}]",
             "Original Key: ${4:}",
             "Church Key: ${5:}",
             "Book: ${6:}",
