@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -25,9 +27,24 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Sync files to S3
+      - name: Upload changed files to S3
         run: |
-          aws s3 sync . s3://${{ secrets.S3_BUCKET }} \
-            --delete \
-            --exclude ".git/*" \
-            --exclude ".github/*"
+          # Get added/modified files (excluding .git and .github)
+          changed=$(git diff --name-only --diff-filter=ACMR HEAD~1 HEAD | grep -v '^\.git')
+
+          for file in $changed; do
+            if [ -f "$file" ]; then
+              echo "Uploading: $file"
+              aws s3 cp "$file" "s3://${{ secrets.S3_BUCKET }}/$file"
+            fi
+          done
+
+      - name: Delete removed files from S3
+        run: |
+          # Get deleted files (excluding .git and .github)
+          deleted=$(git diff --name-only --diff-filter=D HEAD~1 HEAD | grep -v '^\.git')
+
+          for file in $deleted; do
+            echo "Deleting: $file"
+            aws s3 rm "s3://${{ secrets.S3_BUCKET }}/$file"
+          done
