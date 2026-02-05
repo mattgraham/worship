@@ -30,7 +30,7 @@ jobs:
       - name: Upload changed files to S3
         run: |
           # Get added/modified files (excluding .git and .github)
-          changed=$(git diff --name-only --diff-filter=ACMR HEAD~1 HEAD | grep -v '^\.git')
+          changed=$(git diff --name-only --diff-filter=ACMR HEAD~1 HEAD | grep -v '^\.git' || true)
 
           for file in $changed; do
             if [ -f "$file" ]; then
@@ -39,12 +39,20 @@ jobs:
             fi
           done
 
+          if [ -z "$changed" ]; then
+            echo "No files to upload"
+          fi
+
       - name: Delete removed files from S3
         run: |
           # Get deleted files (excluding .git and .github)
-          deleted=$(git diff --name-only --diff-filter=D HEAD~1 HEAD | grep -v '^\.git')
+          deleted=$(git diff --name-only --diff-filter=D HEAD~1 HEAD | grep -v '^\.git' || true)
 
           for file in $deleted; do
             echo "Deleting: $file"
             aws s3 rm "s3://${{ secrets.S3_BUCKET }}/$file"
           done
+
+          if [ -z "$deleted" ]; then
+            echo "No files to delete"
+          fi
