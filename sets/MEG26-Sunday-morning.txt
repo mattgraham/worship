@@ -1,0 +1,22 @@
+# One song per line, in set order. A line matches a song's file name or its
+# Title: (case and punctuation don't matter), or failing that the start of
+# one, as long as only one song starts that way. "| key" prints the song
+# transposed in the set PDF. See build-sets.sh.
+#
+# MEG26 Sunday morning (2026-10-04), Ashley leading. A for the first two
+# songs, E for the last three. The leader wants one chorus each in other
+# languages: Holy Forever in French, Majesty in Spanish, Here for You in
+# Swedish, How Great Is Our God in Swedish, German, Albanian (only if Irma is
+# coming) and French, and The Blessing in Swedish, German, Albanian (again
+# only if Irma comes), Spanish and French. The Swedish Here for You is in the
+# Swedish repo and follows the English chart, as on Friday morning; as of
+# 2026-10-04 there are no charts for any of the other language choruses.
+# "Majesty" here is Delirious' "Majesty (Here I Am)", written in C and
+# transposed to A; the full title is needed because plain "Majesty" would
+# match the Jack Hayford song exactly.
+Holy Forever | A
+Majesty (Here I Am) | A
+Here for You | E
+Vi är här för dig | E
+How Great Is Our God | E
+The Blessing | E
