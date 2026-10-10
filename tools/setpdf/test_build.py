@@ -7,13 +7,15 @@
     uv run tools/setpdf/test_build.py
 """
 
+import json
 import sys
 from pathlib import Path
 
 import pytest
 
 sys.path.insert(0, str(Path(__file__).parent))
-from build import Key, Transposer, layout_line, parse_key, parse_set_line, pretty  # noqa: E402
+from build import (Key, Transposer, build_song, layout_line, parse_chart, parse_key,  # noqa: E402
+                   parse_set_line, pretty)
 
 
 def xp(src, dst):
@@ -110,6 +112,58 @@ def test_chord_only_line():
     out = layout_line("| [Ab] / / / | [Db2] / / / |", lambda b: b)
     assert out["kind"] == "chords"
     assert [t.get("c") for t in out["toks"] if "c" in t] == ["A♭", "D♭2"]
+
+
+CHART = """Title: Demo
+Key: G
+# a comment in the header
+Artist: Someone
+
+Verse 1:
+# This is a heading note, not a lyric
+[G]First line
+#---
+Second line
+  # ---
+Third line
+
+Chorus:
+{sot}
+# not a comment: tab content
+e|--0--|
+{eot}
+[C]Sing
+"""
+
+
+def test_hash_lines_are_comments_not_lyrics(tmp_path):
+    """OnSong hides lines starting with "#" and the only ones in the repo
+    (River of Life) are notes, so none may reach the printed chart; the
+    "# ---" slide marker survives only as an inert {"kind": "break"}."""
+    p = tmp_path / "Demo.onsong"
+    p.write_text(CHART)
+    chart = parse_chart(p)
+    assert chart.meta["artist"] == "Someone"
+    verse = chart.sections[0]
+    assert [ln["kind"] for ln in verse.lines] == ["raw", "break", "raw", "break", "raw"]
+    song = build_song(p, None)
+    dumped = json.dumps(song, ensure_ascii=False)
+    assert "---" not in dumped
+    assert "heading note" not in dumped
+    assert "comment in the header" not in dumped
+
+
+def test_hash_inside_tab_block_is_kept(tmp_path):
+    p = tmp_path / "Demo.onsong"
+    p.write_text(CHART)
+    tab = [ln for s in parse_chart(p).sections for ln in s.lines if ln["kind"] == "tab"]
+    assert "# not a comment: tab content" in [t["text"] for t in tab]
+
+
+def test_break_before_any_lyric_is_dropped(tmp_path):
+    p = tmp_path / "Demo.onsong"
+    p.write_text("Title: D\n\nVerse:\n# ---\nOnly line\n")
+    assert [ln["kind"] for ln in parse_chart(p).sections[0].lines] == ["raw"]
 
 
 if __name__ == "__main__":

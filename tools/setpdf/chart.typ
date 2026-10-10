@@ -82,6 +82,9 @@
     else if l.kind == "chords" { chords-line(l.toks) }
     else if l.kind == "note" { par(text(fill: meta-col, style: "italic", l.text)) }
     else if l.kind == "tab" { block(spacing: 0.2em, text(font: "DejaVu Sans Mono", size: 0.8em, l.text)) }
+    // "break" is the invisible "# ---" slide marker (tools/slides); a chart
+    // is printed exactly as if it were not there.
+    else if l.kind == "break" { none }
     else { par(l.text) }
   }
 })

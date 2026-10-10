@@ -212,6 +212,11 @@ DIRECTIVE_SECTIONS = {
 }
 
 
+# A "# ---" (or "#---", any run of 2+ dashes) comment is the one comment that
+# means something: an invisible slide-break marker for tools/slides/build.py.
+BREAK_MARK = re.compile(r"^#\s*-{2,}\s*$")
+
+
 @dataclass
 class Section:
     label: str | None = None
@@ -264,6 +269,21 @@ def parse_chart(path: Path) -> Chart:
                 in_tab = False
             else:
                 cur.lines.append({"kind": "tab", "text": line})
+            continue
+
+        # OnSong never shows a line starting with "#", and ChordPro drops them
+        # too, so they are comments here as well (checked 2026-10-10: the only
+        # such lines in the repo are three "# Heading" notes in "River of Life
+        # - This is the Day", which the app already hides). This sits after the
+        # tab block above on purpose: inside {sot}..{eot} a "#" is tab content.
+        # The "# ---" marker is kept as a {"kind": "break"} entry, which
+        # build_song passes through untouched and chart.typ draws as nothing,
+        # so the printed chart is unchanged; only the slide builder reads it.
+        # A break before any lyric of a section has nothing to separate, so
+        # it is dropped.
+        if stripped.startswith("#"):
+            if BREAK_MARK.match(stripped) and cur is not None and cur.lines:
+                cur.lines.append({"kind": "break"})
             continue
 
         d = DIRECTIVE.match(stripped)
